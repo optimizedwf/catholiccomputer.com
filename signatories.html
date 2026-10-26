@@ -260,7 +260,7 @@
             var row = document.createElement("div");
             row.className = "sig";
             var nm = document.createElement("b");
-            nm.textContent = String(s.name);
+            nm.textContent = (s.title ? String(s.title) + " " : "") + String(s.name);
             var meta = document.createElement("span");
             var parts = [];
             if (s.city) parts.push(String(s.city));
