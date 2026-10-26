@@ -1,0 +1,42 @@
+{
+  "$schema": "https://catholiccomputer.com/principles.schema.json",
+  "title": "Catholic Computer — starting principles",
+  "note": "Each principle states a working commitment: something this initiative can be checked against, not only an aspiration.",
+  "principles": [
+    {
+      "id": "privacy-and-ownership",
+      "name": "Privacy and ownership",
+      "statement": "Keep sensitive information under the user's control. Favor local processing, data minimization, inspectable data flows, and the ability to export or delete what a system holds."
+    },
+    {
+      "id": "free-will-and-conscience",
+      "name": "Free will and conscience",
+      "statement": "No covert persuasion, engineered dependency, or exploitation of personal vulnerabilities. People must remain free to question, disagree, decide, and disconnect."
+    },
+    {
+      "id": "decentralized-intelligence",
+      "name": "Decentralized intelligence",
+      "statement": "Explore open models, portable agents, interoperable tools, and computing infrastructure that individuals and communities can run or choose for themselves."
+    },
+    {
+      "id": "truth-and-accountability",
+      "name": "Truth and accountability",
+      "statement": "Make claims traceable to sources and technical results reproducible. Be clear about uncertainty. Keep people responsible for consequential decisions."
+    },
+    {
+      "id": "subsidiarity-and-the-common-good",
+      "name": "Subsidiarity and the common good",
+      "statement": "Support the autonomy of families, parishes, schools, and local communities. Share knowledge and tools so advanced computing is useful beyond large institutions."
+    },
+    {
+      "id": "stewardship",
+      "name": "Stewardship",
+      "statement": "Use compute responsibly. Favor efficient models, durable hardware, repairability, and transparent resource costs when choosing how to build."
+    }
+  ],
+  "signatures": {
+    "description": "People who have added their name in personal support of these principles. Clergy and religious sign as individuals; a signature implies nothing about a diocese, order, parish, or the Holy See.",
+    "list": "https://catholiccomputer.com/signatures.json",
+    "schema": "https://catholiccomputer.com/signatures.schema.json"
+  }
+}

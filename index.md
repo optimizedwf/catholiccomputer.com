@@ -11,9 +11,11 @@ Christian ethics should shape how technology works, not just the answers it give
 1. **Privacy and ownership** — Keep sensitive information under the user's control. Favor local processing, data minimization, inspectable data flows, and the ability to export or delete what a system holds.
 2. **Free will and conscience** — No covert persuasion, engineered dependency, or exploitation of personal vulnerabilities. People must remain free to question, disagree, decide, and disconnect.
 3. **Decentralized intelligence** — Explore open models, portable agents, interoperable tools, and computing infrastructure that individuals and communities can run or choose for themselves.
-4. **Truth and accountability** — Make claims traceable to sources. Prefer systems whose behavior can be inspected, tested, and explained over systems that only ask to be trusted.
-5. **Subsidiarity** — Decisions belong as close to the people they affect as possible. Technology should strengthen families, parishes, and local communities rather than centralizing power away from them.
-6. **Stewardship** — Consider the long-term costs of computing: energy, hardware, repairability, and transparent resource costs.
+4. **Truth and accountability** — Make claims traceable to sources and technical results reproducible. Be clear about uncertainty. Keep people responsible for consequential decisions.
+5. **Subsidiarity and the common good** — Support the autonomy of families, parishes, schools, and local communities. Share knowledge and tools so advanced computing is useful beyond large institutions.
+6. **Stewardship** — Use compute responsibly. Favor efficient models, durable hardware, repairability, and transparent resource costs when choosing how to build.
+
+These principles are also published machine-readable at [principles.json](https://catholiccomputer.com/principles.json).
 
 ## The domain family
 
