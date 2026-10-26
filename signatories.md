@@ -15,6 +15,8 @@ One line is all it takes:
 { "name": "Your Name", "city": "Your City", "date": "2026-10-26" }
 ```
 
+Clergy and religious: a title is welcome but never required — `{"name": "Sr. Maria", "title": "Sister", "date": "2026-10-26"}`. A title here is part of a personal endorsement and implies nothing about a diocese, order, parish, or the Holy See.
+
 Use initials or a nickname if you prefer. Ask at any time and a listing will be removed or corrected.
 
 ## The list

@@ -1,5 +1,12 @@
 {
   "$schema": "https://catholiccomputer.com/signatures.schema.json",
   "updated": "2026-10-26",
-  "signatures": []
+  "signatures": [
+    {
+      "name": "Thérèse <Test> & Co.",
+      "title": "Sr.",
+      "city": "Ávila",
+      "date": "2026-10-26"
+    }
+  ]
 }
