@@ -1,0 +1,19 @@
+# Catholic Computer
+
+> Catholic Computer explores sovereign computing, decentralized intelligence, and open-source AI, grounded in human dignity and Catholic social teaching. It is an independent initiative in formation, not a launched service or an organ of any Church body.
+
+The site publishes its starting principles and invites people — clergy and religious included — to add their name in personal support of those principles. Names are added by hand from email or pull requests; the list is a plain JSON file in the repository, and both routes end in the same file. Signatures are personal endorsements, not institutional ones.
+
+## Pages
+
+- [Catholic Computer homepage](https://catholiccomputer.com/index.md): The six principles (privacy and ownership; free will and conscience; decentralized intelligence; truth and accountability; subsidiarity; stewardship) and the domain family.
+- [Add your name](https://catholiccomputer.com/signatories.md): How to sign and who has signed so far.
+
+## Data
+
+- [Signatories list](https://catholiccomputer.com/signatures.json): Machine-readable list of signatures — `name`, `city` (optional), `date` (ISO 8601). Schema: [signatures.schema.json](https://catholiccomputer.com/signatures.schema.json).
+- [Repository](https://github.com/optimizedwf/catholiccomputer.com): Every change to the site and to the signature list is a git commit; the commit history is the canonical record.
+
+## Optional
+
+- [Optimized Workflow](https://optimizedworkflow.dev/): The engineering practice that maintains Catholic Computer.

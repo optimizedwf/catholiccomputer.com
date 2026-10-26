@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://catholiccomputer.com/signatures.schema.json",
+  "title": "Catholic Computer signatures",
+  "description": "Signatures in personal support of the Catholic Computer principles. A signature is a personal endorsement only, and is not an endorsement by any diocese, order, parish, or the Holy See.",
+  "type": "object",
+  "required": ["signatures"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "updated": { "type": "string", "format": "date", "description": "Date this file was last edited (ISO 8601)." },
+    "signatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "date"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1, "description": "Name the signer chose to be shown; may be initials or a nickname." },
+          "title": { "type": "string", "description": "Optional title, e.g. for clergy and religious. Shown as a personal endorsement only." },
+          "city": { "type": "string", "description": "Optional city." },
+          "date": { "type": "string", "format": "date", "description": "Date the signature was recorded (ISO 8601)." }
+        }
+      }
+    }
+  }
+}

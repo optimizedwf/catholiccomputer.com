@@ -8,6 +8,8 @@
   <title>Catholic Computer — Add your name</title>
   <meta name="description" content="Add your name in support of the Catholic Computer principles: sovereign computing, decentralized intelligence, and open-source AI, grounded in human dignity and Catholic social teaching.">
   <link rel="canonical" href="https://catholiccomputer.com/signatories">
+  <link rel="alternate" type="text/markdown" href="https://catholiccomputer.com/signatories.md">
+  <link rel="describedby" type="text/plain" href="https://catholiccomputer.com/llms.txt">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://catholiccomputer.com/signatories">
   <meta property="og:title" content="Catholic Computer — Add your name">
@@ -133,7 +135,8 @@
     .sig b { font-weight: 600; font-size: 15.5px; letter-spacing: -.01em; }
     .sig span { color: var(--quiet); font-size: 13px; text-align: right; }
     .sigs-empty { margin-top: 40px; border: 1px dashed var(--line); padding: 28px 30px; color: var(--muted); font-size: 14.5px; line-height: 1.7; }
-    .note { font-size: 13px; line-height: 1.7; color: var(--quiet); margin: 26px 0 0; max-width: 760px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+  .note { font-size: 13px; line-height: 1.7; color: var(--quiet); margin: 26px 0 0; max-width: 760px; }
     footer { border-top: 1px solid var(--line); margin-top: 40px; }
     footer .wrap { padding-top: 28px; padding-bottom: 37px; display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; }
     .footer-description { max-width: 650px; color: var(--muted); font-size: 13px; line-height: 1.65; margin: 0; }
@@ -197,7 +200,7 @@
         <p>If you keep a GitHub account, add yourself directly. Open the signatures file, add one line, and open a pull request — it goes up as soon as it is merged.</p>
         <p><a href="https://github.com/optimizedwf/catholiccomputer.com/blob/main/signatures.json" rel="noopener"><b>Edit signatures.json on GitHub →</b></a></p>
         <p class="fallback">One line is all it takes: <code>{"name": "Your Name", "city": "Your City", "date": "2026-10-26"}</code></p>
-        <p class="terms">This is the same list the first card feeds; both routes end in the same file.</p>
+        <p class="terms">This is the same list the first card feeds; both routes end in the same file. The list is also published machine-readable at <span class="mono">/signatures.json</span> with a schema, and every addition is a commit in the site's repository — the commit history is the canonical record.</p>
       </div>
     </section>
 
@@ -211,7 +214,7 @@
       </div>
       <div class="sigs-list" id="sigs-list" hidden></div>
       <div class="sigs-empty" id="sigs-empty" hidden>No signatures are shown yet. Be the first — use either card above.</div>
-      <p class="note">Names are added by hand from the emails and pull requests above. If you signed and do not see your name yet, it is probably in the next batch. To correct or remove a listing, write in and it will be done.</p>
+      <p class="note">Names are added by hand from the emails and pull requests above, and the current list is always in <span class="mono">/signatures.json</span>. If you signed and do not see your name yet, it is probably in the next batch. To correct or remove a listing, write in and it will be done.</p>
     </section>
   </main>
 
@@ -247,7 +250,8 @@
       fetch("/signatures.json", { cache: "no-cache" })
         .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
         .then(function (data) {
-          var sigs = Array.isArray(data) ? data.filter(function (s) { return s && s.name; }) : [];
+          var raw = Array.isArray(data) ? data : (data && Array.isArray(data.signatures) ? data.signatures : []);
+          var sigs = raw.filter(function (s) { return s && s.name; });
           if (!sigs.length) { if (empty) empty.hidden = false; if (countEl) countEl.textContent = "0 names"; return; }
           if (countEl) countEl.textContent = sigs.length === 1 ? "1 name" : sigs.length + " names";
           var frag = document.createDocumentFragment();
