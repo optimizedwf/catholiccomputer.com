@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://catholiccomputer.com/sitemap.xml
+
+# Machine-readable surface, for any agent that prefers text to HTML:
+#   /llms.txt          index of this site
+#   /index.md          home page, verbatim, markdown
+#   /signatories.md    signing page, verbatim, markdown
+#   /principles.json   the six principles, stable ids
+#   /signatures.json   the names (personal endorsements)
