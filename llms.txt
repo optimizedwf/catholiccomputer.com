@@ -12,7 +12,7 @@ The site publishes its starting principles and invites people — clergy and rel
 ## Data
 
 - [Principles](https://catholiccomputer.com/principles.json): The six starting principles with stable ids and verbatim commitments — `privacy-and-ownership`, `free-will-and-conscience`, `decentralized-intelligence`, `truth-and-accountability`, `subsidiarity-and-the-common-good`, `stewardship`. Schema: [principles.schema.json](https://catholiccomputer.com/principles.schema.json).
-- [Signatories list](https://catholiccomputer.com/signatures.json): Machine-readable list of signatures — `name`, `city` (optional), `date` (ISO 8601). Schema: [signatures.schema.json](https://catholiccomputer.com/signatures.schema.json).
+- [Signatories list](https://catholiccomputer.com/signatures.json): Machine-readable list of signatures — `name`, `title` (optional, personal endorsement), `city` (optional), `date` (ISO 8601). Schema: [signatures.schema.json](https://catholiccomputer.com/signatures.schema.json).
 - [Repository](https://github.com/optimizedwf/catholiccomputer.com): Every change to the site and to the signature list is a git commit; the commit history is the canonical record.
 
 ## Optional
